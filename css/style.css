@@ -1,0 +1,40 @@
+/* Base styles */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* Effet de verre pour la navigation */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Animation et style des badges de compétences */
+.skill-badge {
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.skill-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+/* Curseur clignotant pour l'effet machine à écrire */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #38bdf8;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
